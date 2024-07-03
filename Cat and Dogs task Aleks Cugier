@@ -1,0 +1,31 @@
+function getHumanAge(catAge, dogAge) {
+  let catHumanAge = 0;
+
+  if (catAge <= 0) {
+    catHumanAge = 0;
+  } else if (catAge > 0 && catAge <= 15) {
+    catHumanAge += 1;
+  } else if (catAge <= 24) {
+    catHumanAge += 2;
+  } else if (catAge <= 28) {
+    catHumanAge += 3;
+  } else if (catAge > 28) {
+    catHumanAge += 4;
+  }
+
+  let dogHumanAge = 0;
+
+  if (dogAge <= 0) {
+    dogHumanAge = 0;
+  } else if (dogAge > 0 && dogAge < 15) {
+    dogHumanAge = 0;
+  } else if (dogAge <= 15 && dogAge < 24) {
+    dogHumanAge += 1;
+  } else if (dogAge <= 24 && dogAge < 29) {
+    dogHumanAge += 2;
+  } else if (dogAge >= 29) {
+    dogHumanAge += 3;
+  }
+
+  return [catHumanAge, dogHumanAge];
+}
